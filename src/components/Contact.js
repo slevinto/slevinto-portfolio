@@ -8,6 +8,7 @@ export default function Contact() {
   const textEmail = React.useRef();
   const textTelephone = React.useRef();
   const textMessage = React.useRef();
+  const btnSubmit = React.useRef();
 
   const [toSend, setToSend] = useState({
     name: '',
@@ -18,6 +19,8 @@ export default function Contact() {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    btnSubmit.current.setAttribute("disabled", "disabled");
+    btnSubmit.current.style.backgroundColor = "gray";
     send(
       'service_o62ibfp',
       'template_t7cxkv2',
@@ -30,6 +33,8 @@ export default function Contact() {
         textEmail.current.value = "";
         textTelephone.current.value = "";
         textMessage.current.value = "";
+        btnSubmit.current.removeAttribute("disabled");
+        btnSubmit.current.style.backgroundColor = "indigo";
       })
       .catch((err) => {
         console.log('FAILED...', err);
@@ -112,8 +117,9 @@ export default function Contact() {
             />
           </div>
           <button
+            ref={btnSubmit}
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
             שלח
           </button>
         </form>
