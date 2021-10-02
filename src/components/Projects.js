@@ -11,7 +11,7 @@ export default function Projects() {
             הפרויקטים שלי
           </h1>          
         </div>
-        <div className="bg-gray-100 rounded-md shadow-md mx-10 text-center lg:mx-20">
+        <div className="bg-gradient-to-r from-gray-400 rounded-md shadow-md mx-10 text-center lg:mx-20">
           {projects.map((project) => (
             <a href={project.link} key={project.image} className="p-4">
                 <img className="mx-auto pb-4" src={project.image}/>                

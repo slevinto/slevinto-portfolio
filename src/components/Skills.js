@@ -11,7 +11,7 @@ export default function Skills() {
             ידע &amp; כלים
           </h1>          
         </div>
-        <div className="bg-gray-100 rounded-md shadow-md mx-10 text-center lg:mx-20">
+        <div className="bg-gradient-to-r from-gray-400 rounded-md shadow-md mx-10 text-center lg:mx-20">
           {skills.map((skill) => (
             <div key={skill} className="p-2">
                 <span className="title-font font-medium text-gray-800">

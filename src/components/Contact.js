@@ -47,7 +47,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="text-gray-800 body-font pb-24">     
-      <div className="bg-gray-100 rounded-md shadow-md mx-10 lg:mx-20">
+      <div className="bg-gradient-to-r from-gray-400 rounded-md shadow-md mx-10 lg:mx-20">
       <form onSubmit={onSubmit} netlify="true" name="contact"
           className="lg:w-1/3 md:w-1/2 mt-8 mx-auto px-6">          
           <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font pt-10">

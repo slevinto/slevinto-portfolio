@@ -17,15 +17,15 @@ export default function About() {
             בעלת 20 שנות ניסיון בפיתוח תוכנה
       </p>    
       </div>      
-      <div className="flex justify-center py-24">
+      <div className="py-24 text-center">
             <a
               href="#contact"
-              className="inline-flex text-black bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
+              className="text-black bg-green-500 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
              בואו נשוחח                  
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 pt-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              className="text-gray-400 bg-gray-800 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
               תיק עבודות
             </a>
       </div> 

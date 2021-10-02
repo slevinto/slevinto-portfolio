@@ -5,6 +5,13 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Testimonials from "./components/Testimonials";
+import WebFont from 'webfontloader';
+
+WebFont.load({
+    custom: {
+      families: ['Kristi'],
+    },
+  });
 
 export default function App() {
   return (
