@@ -1,42 +1,26 @@
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
+import { AcademicCapIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
 export default function Skills() {
   return (
-    <section id="skills">
-      <div className="container px-5 mx-auto lg:pt-10">
-        <div className="text-center">
-          <ChipIcon className="w-10 inline-block mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-black mb-4">
+    <section id="skills">      
+        <div className="text-center pt-20 pb-10 text-gray-800">
+          <AcademicCapIcon className="w-10 inline-block mb-4"/>
+          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
             ידע &amp; כלים
-          </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-             שלום, אני סלבה לוינטון, מהנדסת תוכנה 
-          </p>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-             B.Sc in Computer Science, Technion
-          </p>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">          
-            בעלת 20 שנות ניסיון בפיתוח תוכנה.
-          </p>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">          
-            מספקת שירותי תוכנה בתחומים הבאים:
-          </p>
+          </h1>          
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        <div className="bg-gray-100 rounded-md shadow-md mx-10 text-center lg:mx-20">
           {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                <BadgeCheckIcon className="text-green-400 w-6 h-6 flex-shrink-0 mx-4" />
-                <span className="title-font font-medium text-green-900">
+            <div key={skill} className="p-2">
+                <span className="title-font font-medium text-gray-800">
                   {skill}
                 </span>
               </div>
-            </div>
+            
           ))}
-        </div>
-      </div>
+        </div>      
     </section>
   );
 }

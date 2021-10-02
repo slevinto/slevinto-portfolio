@@ -6,25 +6,15 @@ export default function Testimonials() {
   
   return (
     <section id="testimonials">
-      <div className="container px-5 py-10 mx-auto text-center">
-        <UsersIcon className="w-10 inline-block mb-4 text-white" />
-        <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-12">
+      <div className="text-center pt-20 pb-10 text-gray-800">
+        <UsersIcon className="w-10 inline-block mb-4"/>
+        <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
           תגובות
         </h1>
-        <div className="flex flex-wrap m-4">
+        <div className="bg-gray-100 rounded-md shadow-md mx-10 text-center lg:mx-20">
           {testimonials.map((testimonial) => (
-            <div className="p-4 md:w-1/2 w-full" key={testimonial.image}>
-              <div className="h-full rounded">
-                <div className="flex">
-                  <img
-                    alt="testimonial"
-                    src={testimonial.image}
-                    className="object-cover object-center"                    
-                  />                  
-                </div>
-              </div>
-            </div>
-          ))}
+            <img key={testimonial.image} src={testimonial.image} className="mx-auto m-4 p-4"/>                  
+            ))}
         </div>
       </div>      
     </section>

@@ -46,18 +46,15 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="relative bg-gray-100">
-      
-      <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
-      <form onSubmit={onSubmit}
-          netlify="true"
-          name="contact"
-          className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 pr-8 pl-20">          
-          <h2 className="text-black sm:text-4xl text-3xl mb-1 font-medium title-font">
+    <section id="contact" className="text-gray-800 body-font pb-24">     
+      <div className="bg-gray-100 rounded-md shadow-md mx-10 lg:mx-20">
+      <form onSubmit={onSubmit} netlify="true" name="contact"
+          className="lg:w-1/3 md:w-1/2 mt-8 mx-auto px-6">          
+          <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font pt-10">
             בואו נדבר!
           </h2>
           <p className="leading-relaxed mb-5">
-            תשאירו פרטים ואחזור אליכם בהקדם 
+          השאירו פרטים ואחזור אליכם בהקדם 
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -116,48 +113,16 @@ export default function Contact() {
               onChange={handleChange}
             />
           </div>
-          <button
+          <div className="pb-4">
+            <button
             ref={btnSubmit}
             type="submit"
-            className="text-white bg-indigo-900 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            className="text-green-900 bg-green-400 py-2 border-0 px-6 rounded text-lg">
             שלח
           </button>
-        </form>
-        <div className="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">          
-          <div className="bg-gray-200 rounded shadow-md px-4">            
-              <h2 className="title-font font-semibold text-gray tracking-widest text-xs mt-4">
-                כתובת
-              </h2>
-              <a className="text-indigo-700 leading-relaxed">
-                קיבוץ אל-רום 
-              </a> 
-              <br></br>
-              <a className="text-indigo-700 leading-relaxed">
-                ד.נ. צפון רמת הגולן 12466
-              </a>           
-              <h2 className="title-font font-semibold text-gray tracking-widest text-xs mt-4">
-                דוא"ל
-              </h2>
-              <a className="text-indigo-700 leading-relaxed">
-                slevinto@gmail.com
-              </a>
-              <h2 className="title-font font-semibold text-gray tracking-widest text-xs mt-4">
-                טלפון
-              </h2>
-              <p className="leading-relaxed text-indigo-700">052-279-6275</p>            
-          </div>
-          <iframe
-            width="50%"
-            height="50%"
-            title="map"
-            className="border-2"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
-            src="https://www.google.com/maps/embed/v1/place?q=Zimmer+el-rom&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          />
-        </div>        
-      </div>
-    </section>
+          </div>  
+        </form>  
+        </div>            
+      </section>
   );
 }

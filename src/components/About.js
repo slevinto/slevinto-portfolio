@@ -2,13 +2,22 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about">
-      <div className="container mx-auto flex px-10 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center pt-10">
-            <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-green-700 float-right">
+    <section id="about" className="pt-24  min-h-screen max-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${"./bg.webp"})` }}>      
+      <div className="rounded shadow-md">   
+      <h1 className="text-3xl text-green-400 bg-gray-800 text-center py-8">
             פיתוח תוכנה, ווב, מובייל           
-            </h1>
-          <div className="flex justify-center py-4">
+      </h1>
+      <p className="text-center bg-gray-800 text-gray-400 pb-3">
+             שלום, אני סלבה לוינטון, מהנדסת תוכנה 
+      </p>
+      <p className="text-center bg-gray-800 text-gray-400 pb-3">
+             B.Sc in Computer Science, Technion
+      </p>
+      <p className="text-center bg-gray-800 text-gray-400 pb-8">          
+            בעלת 20 שנות ניסיון בפיתוח תוכנה
+      </p>    
+      </div>      
+      <div className="flex justify-center py-24">
             <a
               href="#contact"
               className="inline-flex text-black bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
@@ -19,9 +28,23 @@ export default function About() {
               className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 pt-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
               תיק עבודות
             </a>
-          </div>
-        </div>        
-      </div>
+      </div> 
+      <div className="rounded shadow-md justify-center flex flex-wrap bg-gray-800">            
+        <div className="inline-block w-1/2 text-center">
+          <h2 className="text-xl text-green-400 pt-8">
+             דוא"ל
+          </h2>
+          <p className="text-gray-400 py-4"> 
+             slevinto@gmail.com
+          </p>
+        </div>         
+        <div className="inline-block w-1/2 text-center">
+          <h2 className="text-xl text-green-400 pt-8">
+             טלפון
+          </h2>
+          <p className="text-gray-400 pt-4 pb-8">052-279-6275</p>            
+        </div> 
+      </div>         
     </section>
   );
 }

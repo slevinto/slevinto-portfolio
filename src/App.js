@@ -8,7 +8,7 @@ import Testimonials from "./components/Testimonials";
 
 export default function App() {
   return (
-    <main className="body-font bg-cover" style={{ backgroundImage: `url(${"./bg.jpg"})` }}>
+    <main className="body-font">
       <Navbar />
       <About />
       <Skills />

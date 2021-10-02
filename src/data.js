@@ -37,8 +37,8 @@ export const projects = [
     image: "./selenium.png"
   },
   {
-    title: "MFC C#",
-    subtitle: "varied MFC projects",
+    title: "varied MFC projects",
+    subtitle: "#MFC C",
     description:
       ".Driver Installer, Web Scrapper, etc",
     image: "./mfc.jpg"
