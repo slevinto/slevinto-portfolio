@@ -20,51 +20,51 @@ export const projects = [
     subtitle: "Java Android App",
     description:
       "Initiated interrupt of the phone call after defined period of minutes and send email with recorded call",
-    image: "./android.png"
+    image: "./android.webp"
   },
   {
     title: "Web Services, Rest API, SQL",
     subtitle: "#ASP.Net C",
     description:
       "Website to prices compare for Rami Levi, Complicated internal use website for El-Al",
-    image: "./icon-aspnet.png"
+    image: "./icon-aspnet.webp"
   },
   {
     title: "Web scrapping",
     subtitle: "#Selenium C",
     description:
       "Website yad2.co.il scrapping, including captcha solve",
-    image: "./selenium.png"
+    image: "./selenium.webp"
   },
   {
     title: "varied MFC projects",
     subtitle: "#MFC C",
     description:
       ".Driver Installer, Web Scrapper, etc",
-    image: "./mfc.jpg"
+    image: "./mfc.webp"
   },
   {
     title: "Web scrapping",
     subtitle: "Python",
     description:
       "Variety of Web sites scrapping",
-    image: "./python.png"
+    image: "./python.webp"
   },
   {
     title: "QuietGuest",
     subtitle: "Xamarin",
     description:
       "Call to electric gate when SMS sent with specific text",
-    image: "./xamarin.png"
+    image: "./xamarin.webp"
   },
 ];
 
 export const testimonials = [
   {
-    image: "./testimonials_1.bmp",    
+    image: "./testimonials_1.webp",    
   },
   {
-    image: "./testimonials_2.bmp",    
+    image: "./testimonials_2.webp",    
   },
 ];
 
