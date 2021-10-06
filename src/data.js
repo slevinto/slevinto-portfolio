@@ -1,3 +1,15 @@
+
+import { faReact } from "@fortawesome/free-brands-svg-icons";  // react
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";  // sql db
+import { faFire } from "@fortawesome/free-solid-svg-icons";  // firebase
+import { faPython } from "@fortawesome/free-brands-svg-icons";  // python
+import { faAndroid } from "@fortawesome/free-brands-svg-icons";  // android
+import { faMicrosoft } from "@fortawesome/free-brands-svg-icons";  // mfc
+import { faWindows } from "@fortawesome/free-brands-svg-icons";  // c#
+import { faEdgeLegacy } from "@fortawesome/free-brands-svg-icons";  // asp net
+import { faBootstrap } from "@fortawesome/free-brands-svg-icons";  // bootstrap
+import { faGooglePlay } from "@fortawesome/free-brands-svg-icons";  // bootstrap
+
 export const projects = [
   {
     title: "Myoji Birthday Video and Slideshow Maker",
@@ -26,7 +38,7 @@ export const projects = [
     title: "Web Services, Rest API, SQL",
     subtitle: "#ASP.Net C",
     description:
-      "Website to prices compare for Rami Levi, Complicated internal use website for El-Al",
+      "Website for prices comparison for Rami Levi, Complicated internal use website for El-Al",
     image: "./icon-aspnet.webp"
   },
   {
@@ -69,14 +81,60 @@ export const testimonials = [
 ];
 
 export const skills = [
-  "Asp.Net",
-  "C#",
-  "MFC",
-  "פיתוח אפליקציות היברידיות Xamarin",  
-  "פיתוח אפליקציות נאיטיב Java, Kotlin",
-  "Python",
-  "React.js",
-  "Node.js",
-  "Material UI",
-  "שירותי פיתוח תוכנה לפי שעה"
+  {
+    skillIcon: faEdgeLegacy,
+    title: "ASP .NET",
+    description: "Responsive Web Sites, REST API, Web Services, Selenium"
+  },
+ {
+  skillIcon: faMicrosoft,
+    title: "MFC"    
+  },
+  {
+    skillIcon: faAndroid,
+    title: "Android native applications",
+    description: "Java, Kotlin, In-App purchase, Google Ads, PlayMarket"
+  },
+  {
+    skillIcon: faPython,
+    title: "Python",
+    description: "Web scrapping, Selenium, Excel"
+  },
+  {
+    skillIcon: faReact,
+    title: "Reactjs",
+    description: "Web sites, landing pages, tailwindcss, deploy to heroku"
+  },
+  {
+    skillIcon: faDatabase,
+    title: "MS SQL DB",
+    description: "Web sites"
+  },
+  {
+    skillIcon: faFire,
+    title: "Firebase",
+    description: "Android applicationd"
+  },
+  {
+    skillIcon: faWindows,
+    title: "#C"
+  },
+  {
+    skillIcon: faBootstrap,
+    title: "bootstrap",
+    description: "responsive web sites"
+  },
+  {
+    skillIcon: faGooglePlay,
+    title: "Google Play",
+    description: "Android applications deployment to Google Play"
+  },
+  {
+    title: "Selenium",
+    description: "Web scraping"
+  },
+  {
+    title: "Xamarin",
+    description: "Mobile hybrid applications"
+  }
 ];
