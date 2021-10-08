@@ -87,8 +87,9 @@ export const skills = [
     description: "Responsive Web Sites, REST API, Web Services, Selenium"
   },
  {
-  skillIcon: faMicrosoft,
-    title: "MFC"    
+    skillIcon: faMicrosoft,
+    title: "MFC",
+    description: " ",    
   },
   {
     skillIcon: faAndroid,
@@ -117,7 +118,8 @@ export const skills = [
   },
   {
     skillIcon: faWindows,
-    title: "#C"
+    title: "#C",
+    description: " ",
   },
   {
     skillIcon: faBootstrap,
