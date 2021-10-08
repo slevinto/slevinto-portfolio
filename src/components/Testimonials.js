@@ -8,7 +8,7 @@ const properties = {
   duration: 2000,
   transitionDuration: 1000,
   infinite: true,
-  arrows: null
+  arrows: false
 };
 
 export default function Testimonials() {  
