@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import { send } from 'emailjs-com';
+import { PhoneIcon } from "@heroicons/react/solid";
 
 export default function Contact() {
 
@@ -46,16 +47,21 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="text-gray-800 body-font pb-24">     
-      <div className="bg-gradient-to-r from-gray-400 rounded-md shadow-md mx-10 lg:mx-20">
+    <section id="contact">     
+      <div className="container mx-auto">
+        <div className="flex flex-wrap -m-4"></div>   
+        <div className="text-center text-gray-800">
+            <PhoneIcon className="w-10 inline-block mb-4"/>
+            <h1 className="sm:text-4xl text-3xl font-medium title-font pb-2">
+            בואו נדבר! 
+            </h1>     
+            <p className="leading-relaxed text-gray-400">
+          השאירו פרטים ואחזור אליכם בהקדם 
+          </p>     
+        </div>        
       <form onSubmit={onSubmit} netlify="true" name="contact"
           className="lg:w-1/3 md:w-1/2 mt-8 mx-auto px-6">          
-          <h2 className="sm:text-4xl text-3xl mb-1 font-medium title-font pt-10">
-            בואו נדבר!
-          </h2>
-          <p className="leading-relaxed mb-5">
-          השאירו פרטים ואחזור אליכם בהקדם 
-          </p>
+          
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
               שם

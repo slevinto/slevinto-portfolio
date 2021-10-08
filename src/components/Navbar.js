@@ -3,10 +3,10 @@ import Zoom from 'react-reveal/Zoom';
 
 export default function Navbar() {
   return (
-    <header className="bg-gray-800 md:sticky top-0 z-10 text-center py-6 ">
+    <header className="bg-gray-800 md:sticky top-0 z-10 text-center pb-6 ">
       <Zoom>
-        <a href="#about" className="text-7xl text-white font-serif">
-          Slava Levinton
+        <a href="#contact"> 
+          <img className="mx-auto" src="./slava.webp"/>
         </a>
       </Zoom>
       <nav className="text-green-400 pt-6">

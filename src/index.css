@@ -2,8 +2,3 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@font-face {
-    font-family: 'Kristi';
-    src: local('Kristi'), url(./fonts/Kristi-Regular.woff2);    
-    font-display: block;
-}
