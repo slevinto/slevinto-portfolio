@@ -1,6 +1,8 @@
-import { CursorClickIcon } from "@heroicons/react/solid";
+
 import React from "react";
 import { projects } from "../data";
+import { faMousePointer } from "@fortawesome/free-solid-svg-icons";  
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
@@ -9,7 +11,7 @@ export default function Projects() {
       <div className="container pb-24 mx-auto">
       <div className="flex flex-wrap -m-4"></div>   
         <div className="text-center text-gray-800">
-          <CursorClickIcon className="w-10 inline-block mb-4"/>
+        <FontAwesomeIcon icon={faMousePointer} className="w-10 inline-block mb-4 text-3xl"/>
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
               הפרויקטים שלי 
           </h1>          

@@ -1,8 +1,9 @@
 import React from "react";
 import { skills } from "../data";
-import { AcademicCapIcon } from "@heroicons/react/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";  // bootstrap
 import Fade from 'react-reveal/Fade';
+import 'react-slideshow-image/dist/styles.css'
 
 export default function Skills() {
   return (
@@ -10,7 +11,7 @@ export default function Skills() {
     <div className="container py-24 mx-auto">
       <div className="flex flex-wrap -m-4"></div>   
         <div className="text-center text-gray-800">
-          <AcademicCapIcon className="w-10 inline-block mb-4"/>
+        <FontAwesomeIcon icon={faGraduationCap} className="w-10 inline-block mb-4 text-3xl"/>
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4">
             ידע &amp; כלים
           </h1>          
