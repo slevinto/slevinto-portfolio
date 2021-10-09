@@ -3,7 +3,6 @@ import { skills } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";  // bootstrap
 import Fade from 'react-reveal/Fade';
-import 'react-slideshow-image/dist/styles.css'
 
 export default function Skills() {
   return (

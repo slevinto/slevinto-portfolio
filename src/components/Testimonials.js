@@ -19,7 +19,7 @@ export default function Testimonials() {
                 תגובות 
             </h1>          
         </div>        
-        <Carousel defaultWait={3000} maxTurns={2}>
+        <Carousel defaultWait={3000} maxTurns={1}>
            {testimonials.map(testimonial => 
             <Slide right>
               <div key={testimonial.image}>
