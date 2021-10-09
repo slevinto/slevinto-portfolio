@@ -49,8 +49,8 @@ export default function Contact() {
 
   return (
     <section id="contact">     
-      <div className="container mx-auto relative top-80">
-        <div className="flex flex-wrap"></div>   
+      <div className="container mx-auto relative top-48 lg:top-80">
+         
         <div className="text-center text-gray-800">
         <FontAwesomeIcon icon={faPhone} className="w-10 inline-block mb-4 text-3xl"/>
             <h1 className="sm:text-4xl text-3xl font-medium title-font pb-2">

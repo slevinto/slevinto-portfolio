@@ -3,7 +3,7 @@ import React from "react";
 import { projects } from "../data";
 import { faMousePointer } from "@fortawesome/free-solid-svg-icons";  
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 export default function Projects() {
   return (
@@ -18,7 +18,7 @@ export default function Projects() {
         </div>        
           <div className="text-center max-w-sm rounded shadow-lg mx-auto">
             {projects.map((project) => (
-              <Fade right cascade>
+              <Zoom right cascade>
                 <a href={project.link} key={project.image} className="p-4">
                   <img className="mx-auto w-16 h-16" src={project.image}/>                
                   <h1 className="title-font text-lg font-medium text-black mb-3 pt-4">
@@ -29,7 +29,7 @@ export default function Projects() {
                   </h2>
                   <p className="leading-relaxed pb-4">{project.description}</p>
                 </a>
-              </Fade>
+              </Zoom>
             ))}
           </div>          
         </div>      
